@@ -14,4 +14,4 @@
 
 ### **Four:** Add remote repository
 
-### **Five:** push
+### **Five:** Git push remote_name local_branch
