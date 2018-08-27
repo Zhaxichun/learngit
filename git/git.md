@@ -50,11 +50,59 @@ git status // find untrack files
 add, commit, 
 ~~~
 
-### 3.1 add
+- git config
+    - get help config
+    - > dsk 
+- git help
+- **`git init`**
+- `git add`
+- git `clone`
+- `git status`
+- `git diff`
+    - > To show the changes.
+- `git commit`
+    - > git commit main.py -m "this is main.py file commit mark use -m option"
+    - >git commit -a -m "？？mark"  to run `add` & `commit` at a time.
+- git reset
+- git rm
+- git mv
+- `git branch`
+    - > Create new Branch   `git branch branch_name`
 
-### 3.2 commit
+    - > view all branches: `git branch`
+    - >  Change to branch: `git checkout new_branch`
+- `git checkout`
+- git merge
+- git mergetool
+- `git log`
+    - > to show the commit history
+- git stash
+- git tag
+- `git fetch`
+- `git push`
+    - > to Push local repository to remote server.
+    - > git push origin master
+- `git pull`
+    - > update local repository.
+- `git remote`
+- git describle
+- git rebase
 
-### 3.3 
+## some step to use git.
+
+~~~git
+
+// init a new repository
+git init
+
+// ssh public key
+ssh-keygen -t rsa -C “haiyan.xu.vip@gmail.com”
+
+// add remote repository.
+git remote add origin git@github.com:michaelliao/learngit.git
+
+
+~~~
 
 
     
