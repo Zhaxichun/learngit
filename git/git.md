@@ -90,17 +90,39 @@ add, commit,
 
 ## some step to use git.
 
-~~~git
+~~~conf
 
 // init a new repository
 git init
 
 // ssh public key
-ssh-keygen -t rsa -C “haiyan.xu.vip@gmail.com”
+ssh-keygen -t rsa -C 'zhaxichun@163.com'
 
 // add remote repository.
-git remote add origin git@github.com:michaelliao/learngit.git
+git remote add origin git@gitee.com:zhaxi/leangit.git
 
+[core]
+    repositoryformatversion = 0
+    filemode = false
+    bare = false
+    logallrefupdates = true
+    symlinks = false
+    ignorecase = true
+[remote "origin"]
+    url = git@github.com:hwangfantasy/beautify.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+
+# add new remote parameter.
+[remote "mirror"] 
+    url = git@git.oschina.net:hwangfantasy/beautify.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+    remote = origin
+    remote = mirror # add info to branch info.
+    merge = refs/heads/master
+[gui]
+    wmstate = normal
+    geometry = 841x483+156+156 189 218
 
 ~~~
 
